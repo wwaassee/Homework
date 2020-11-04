@@ -22,7 +22,7 @@
         
     </div>
     
-
+    
     <script>
         
         let login = {};
@@ -31,14 +31,23 @@
         let loginNameIn = document.querySelector("#login-name");
         let loginPasswordIn = document.querySelector('#login-password');
         let button = document.querySelector('button');
+        let greenBlock = document.querySelector('.green');
+        let redBlock = document.querySelector('.red');
+         function showGreenBlock() {
+             greenBlock.classList.toggle('active');
+         }
+         function showRedBlock() {
+             redBlock.classList.toggle('active');
+         }
         
         button.onclick = function() {
             let loginNameOut = loginNameIn.value;
             let loginPasswordOut = loginPasswordIn.value;
+            
             if((login.name == loginNameOut) && (login.password == loginPasswordOut)) {
-                console.log('awd');
+                showGreenBlock();
             }else {
-                console.log('123');
+                showRedBlock();
             }
         }
         
@@ -46,6 +55,6 @@
       
     
     </script>
-    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </body>
 </html>

@@ -27,7 +27,7 @@ form {
     font-size: 50px;
     text-transform: uppercase;
 }
-.green.active {
+.active {
     display: flex;
 }
 .red {
