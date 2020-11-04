@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="green">congratulations</div>
+        <!-- <form> -->
+            <input type="text" placeholder="Login" id="login-name">
+            <input type="text" placeholder="Password" id="login-password">
+            <button>
+                submit
+            </button>
+            
+        <!-- </form> -->
+        <div class="red">failed</div>
+        
+    </div>
+    
+
+    <script>
+        
+        let login = {};
+            login.name = "admin"
+            login.password = "qwerty"       
+        let loginNameIn = document.querySelector("#login-name");
+        let loginPasswordIn = document.querySelector('#login-password');
+        let button = document.querySelector('button');
+        
+        button.onclick = function() {
+            let loginNameOut = loginNameIn.value;
+            let loginPasswordOut = loginPasswordIn.value;
+            if((login.name == loginNameOut) && (login.password == loginPasswordOut)) {
+                console.log('awd');
+            }else {
+                console.log('123');
+            }
+        }
+        
+        
+      
+    
+    </script>
+    
+</body>
+</html>

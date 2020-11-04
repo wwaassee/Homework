@@ -1,0 +1,47 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.red, .green {
+    width: 500px;
+    height: 200px;
+    
+}
+.green {
+    background-color: green;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.green.active {
+    display: flex;
+}
+.red {
+    background-color: red;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.red.active {
+    display: flex;
+}
+.suka {
+    color: red;
+}
